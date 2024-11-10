@@ -14,8 +14,8 @@
     margin-top: 36px;
 }
 
-/video-container {
-    flex: 1;
+.video-container {
+    flex: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -35,7 +35,7 @@
 }
 
 .info-section {
-    flex: 1;
+    flex-basis: 50%;
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
