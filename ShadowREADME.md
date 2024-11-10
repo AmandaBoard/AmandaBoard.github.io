@@ -54,7 +54,7 @@ This asset offers a custom interactable scene with a selected character, i.e Sha
 
 ### Customization
 
--   **Adjust Dialogue Prompts and Responses**: Easily customize the lines to what you would like through editing the code directly in the sections pictured below.
+-   **Adjust Dialogue Prompts and Responses**: Easily customize the lines to what you would like through editing the code directly in the sections pictured below of the ShadowDialogue.cs script. 
 ![image](https://github.com/user-attachments/assets/65e6bd0c-1b30-4527-ab91-b77217c5e53c)
 
 -   **Change Colors on Buttons and Sprites**: Using the Unity Inspector window, click on the item you would like to modify, and simply change the color to your preference.
@@ -68,17 +68,17 @@ This asset offers a custom interactable scene with a selected character, i.e Sha
 ## FAQ
 
 **Q: How do I adjust the affection points?**  
-A: You can adjust the score to win by setting the `PONG_SCORE_TO_WIN` variable in the `Pong` script. You can set this value to a maximum of 255. You can also update the score in the `Pong.cs` script by changing the variable initilzation as well.
+A: You can adjust the affection points to your heart's desire by editing the `ProcessChoice` method in the `ShadowNormalState` script. You can set the dialogue.affectionManager.ChangeShadowAffectionPOints(value) to any value you would like based on the given dialogue response. 
 
 **Q: Can I add additional dialogue?**  
-A: Yes, you can add other mini game levels. You can create another subclass of the `MiniGameLevel` and update/add all the necessary functions for your neew game. Then, you then can create a new subclass of `ScoreManager` to handle the scoring system for your new mini game.
+A: Yes, you can additional dialogue, including an extra dialogue box if wanted. You can also create another dialogue response option within your playerResponses list. For instance, if you wanted three dialogue response options you would seperate each with a comma, as shown `new string[] {"I'm here to talk to you, you seem pretty cool.", "I was just curious how they allowed you in here.", "Hey here is the third dialogue response"},` and assign the new button as ResponseButton 3 in your inspector window of the DialogueController Game Object. 
 
-**Q: Can I update the affection point display?**
-A: Yes, you can update the speed of the paddles by going into the `Paddle.cs` script and changing the `speed` variable to whatever you would like. By default, it is set to 10.
+**Q: Can I customize the affection point display?**
+A: Yes, you can modify the affection point display by changing it to a meter, different text color, whichever you prefer. By default, affection points are set to 0 then dynamically updated through the affectionManager observer. 
 
-**Q: Can I update the base and maximum speed of the ball?**
-A: Yes, you can update the maximum speed of the ball by clicking on the `Ball` sprite in the Unity editor. There is a variable attached to the sprite called `Speed` which is the base speed. It is set to 5 by default. To update the max speed of the ball, you can update the other variable in the editor called `BALL_MAX_SPEED` to whatever you like. It is set to 15 by default.
+**Q: What is BC Mode?**
+A: BC mode was implemented for players who struggle in the dating scene. Affection points can never go below 0, and the player will always win in BC mode. 
 
-**Q: Can I update the sprites**
-A: Yes, you can update the sprites in the mini game. To do so, you can click on the element you want to update in the hierarchy, and drag and drop your new sprite into the `Sprite` tab in the `Sprite Renderer`.
+**Q: Can I update the sprites?**
+A: Yes, you can update the sprites to your own character. To do so, you can click on the element you want to update in the hierarchy, and drag and drop your new sprite into the `Sprite` tab in the `Sprite Renderer`.
 
