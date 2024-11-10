@@ -15,21 +15,25 @@ This asset offers a custom interactable scene with a selected character, i.e Sha
  ![image](https://github.com/user-attachments/assets/7b32e6ef-6bcc-44f8-84b6-d1003b0b84b1)
  -  Shadow
  -  AffectionManager
- -  DialogueDisplay
+ -  DialogueManager
  -  ShadowDialogueDisplay
- -  ShadowText
+ -  ShadowDialoguePanel
+ -  ShadowDialogueText
  -  Response1 Button
  -  Response1 Text
  -  Response2 Button
  -  Response2 Text
- -  Affection Text
+ -  AffectionLevel Text
 
 
 ## Requirements
 
 -   **Unity Version**: Unity 2022.3.42f1 or later
 -   **Platform Compatibility**: Works on Windows, macOS, Android, iOS
--   **Dependencies**: 
+-   **Dependencies**: Ensure you have attached the script UnityDialogueUI to the DialogueManager Game Object and use the Inspector window to assign the needed components as pictured below. ![image](https://github.com/user-attachments/assets/40ace138-e195-4cc6-b5be-c4a13093a28b)
+-   NOT INCLUDED: An EventSystem prefab, which is accessible through right-clicking on the scene, then UI->Event System.
+-   Note: Make sure all necessary scripts (Hedgehog.cs, ShadowDialogue.cs, IState.cs, ShadowNormalState.cs, ShadowLockoutState, AffectionManager.cs, AffectionUI.cs, and IAffectionObserver) are included in an Assets folder. 
+
 
 ## Installation
 
@@ -50,14 +54,16 @@ This asset offers a custom interactable scene with a selected character, i.e Sha
 
 ### Customization
 
--   **Adjust Dialogue Prompts and Responses**: Open the prefab and adjust properties in the Inspector, such as:
-    -   Positions of each element in the prefab
-    -   Assets of the ball, paddle, background, scores, and game over screen.
--   **Script Modifications**: If needed, edit the attached scripts to add custom behavior.
-    -   Assets of the Shadow, AffectionPoints, DialogueDisplay and all necessary code files allow you to craft a unique love interest. 
+-   **Adjust Dialogue Prompts and Responses**: Easily customize the lines to what you would like through editing the code directly in the sections pictured below.
+![image](https://github.com/user-attachments/assets/65e6bd0c-1b30-4527-ab91-b77217c5e53c)
+
+-   **Change Colors on Buttons and Sprites**: Using the Unity Inspector window, click on the item you would like to modify, and simply change the color to your preference.
     -   Positioning of each element in the prefab.
-- 
--   **Difficulty Levels**: It is easy to implement changing points based on a given difficulty level. 
+
+-   **Script Modifications**: If needed, edit the attached scripts to add custom behavior like new states for certain affection point levels.
+    -   Allows you to craft a unique love interest. 
+
+-   **Difficulty Levels**: It is easy to implement different affection point scoring based on a given difficulty level. 
 
 ## FAQ
 
