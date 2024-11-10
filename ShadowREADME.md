@@ -11,6 +11,20 @@ This asset offers a custom interactable scene with a selected character, i.e Sha
      - Ex: `ShadowLockoutState, ShadowNormalState, ShadowMiniGameDateState.`.
 -   **Feature 4**: Affection points display updated through an observer pattern to see how each dialogue response affects the NPC's opionion of the player. 
 
+## Includes
+ ![image](https://github.com/user-attachments/assets/7b32e6ef-6bcc-44f8-84b6-d1003b0b84b1)
+ -  Shadow
+ -  AffectionManager
+ -  DialogueDisplay
+ -  ShadowDialogueDisplay
+ -  ShadowText
+ -  Response1 Button
+ -  Response1 Text
+ -  Response2 Button
+ -  Response2 Text
+ -  Affection Text
+
+
 ## Requirements
 
 -   **Unity Version**: Unity 2022.3.42f1 or later
@@ -24,7 +38,6 @@ This asset offers a custom interactable scene with a selected character, i.e Sha
     - Open Unity, go to `Assets > Import Package > Custom Package`.
     - Select the downloaded `.unitypackage` file and click **Import**.
 3. **Add the prefab**: Drag and drop the main prefab (`Shadow.prefab`) from the `Assets` folder into your scene as shown in the image below. 
-4. ![image](https://github.com/user-attachments/assets/7b32e6ef-6bcc-44f8-84b6-d1003b0b84b1)
 
 
 ## Usage
