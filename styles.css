@@ -1,69 +1,77 @@
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .container {
+    display: flex;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 5%;
+    margin-top: 36px;
 }
 
-/* Styling the info section */
+.video-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.video-section video {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
 .info-section {
-    margin-bottom: 40px;
+    flex: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.info-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .rating {
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
 .stars {
-    color: gold;
+    color: #ffd700;
+    margin-right: 5px;
+}
+
+.reviews {
+    color: #555;
+    font-size: 14px;
+}
+
+.info-section p {
+    margin-bottom: 10px;
 }
 
 .price {
-    font-size: 1.5em;
+    font-size: 20px;
+    color: #28a745;
     font-weight: bold;
-    color: green;
+    margin-bottom: 20px;
 }
 
-ul {
-    margin: 10px 0;
+.info-section p,
+.info-section ul {
+    margin-bottom: 10px;
+}
+
+.info-section ul {
     padding-left: 20px;
 }
-
-ul li {
-    margin: 5px 0;
-}
-
-/* Specific rule to keep the description text in normal weight */
-.info-section p {
-    font-weight: normal; /* Ensures the paragraph text is not bold */
-}
-
-/* Bold the specific parts we want, like 'Description' */
-strong {
-    font-weight: bold; /* This ensures only the <strong> elements are bolded */
-}
-
-/* Styling the video section */
-.video-section {
-    margin-bottom: 30px;
-}
-
-video {
-    width: 100%;
-    max-width: 800px; /* Optional: adjust size as needed */
-    margin-top: 10px;
-}
-
-p {
-    font-weight: normal; /* Ensures all paragraphs within the video section are not bold */
-}
-
