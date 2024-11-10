@@ -1,14 +1,15 @@
-# Pong
+# Interactable Unique Shadow Love Interest
 
 ## Overview
-
-This asset is a 2D pong game designed to be an easy-to-use and customizable minigame for Unity developers to add to their games. It includes an AI opponent, scoring system, paddle and ball assets and buttons and code for mobile implementation. Ideal for quick prototyping, learning purposes, or as a starting point for a larger project.
+This asset offers a custom interactable scene with a selected character, i.e Shadow the Hedgehog where there are a provided list of dialogue choices Shadow uses and a list of dialogue responses the player is able to choose through button selection. Based on the given prompts, Shadow will favor one response over the other, if too many bad choices have been made, Shadow becomes locked. This asset is easily applicable to more than an affection point based system, where whenever a customized one on one interaction between a player and a non-playable character (NPC) is needed. 
 
 ## Features
 
--   **Feature 1**: AI Opponent that uses the ball's Y-axis to determine where to go. It is tricky to beat!
--   **Feature 2**: Scoring system that utilizes the factory pattern to be easily and readily customized and extended.
--   **Feature 3**: Two game modes, BC and Normal mode.
+-   **Feature 1**: Shadow Sprite Love Interest (NPC)
+-   **Feature 2**: UI Dialogue Display System that includes a main dialogue textbox, two response button textboxes.
+-   **Feature 3**: Fully integrated character specific state pattern for key game moments and overall flow of conversation
+     - Ex: `ShadowLockoutState, ShadowNormalState, ShadowMiniGameDateState.`.
+-   **Feature 4**: Affection points display updated through an observer pattern to see how each dialogue response affects the NPC's opionion of the player. 
 
 ## Requirements
 
@@ -22,7 +23,7 @@ This asset is a 2D pong game designed to be an easy-to-use and customizable mini
 2. **Import the package**:
     - Open Unity, go to `Assets > Import Package > Custom Package`.
     - Select the downloaded `.unitypackage` file and click **Import**.
-3. **Add the prefab**: Drag and drop the main prefab (`PongGame.prefab`) from the `Assets` folder into your scene.
+3. **Add the prefab**: Drag and drop the main prefab (`Shadow.prefab`) from the `Assets` folder into your scene.
 
 ## Usage
 
@@ -34,20 +35,24 @@ This asset is a 2D pong game designed to be an easy-to-use and customizable mini
 
 ### Customization
 
--   **Adjust Settings**: Open the prefab and adjust properties in the Inspector, such as:
+-   **Adjust Dialogue Prompts and Responses**: Open the prefab and adjust properties in the Inspector, such as:
     -   Positions of each element in the prefab
     -   Assets of the ball, paddle, background, scores, and game over screen.
 -   **Script Modifications**: If needed, edit the attached scripts to add custom behavior.
+    -   Assets of the Shadow, AffectionPoints, DialogueDisplay and all necessary code files allow you to craft a unique love interest. 
+    -   Positioning of each element in the prefab.
+- 
+-   **Difficulty Levels**: It is easy to implement changing points based on a given difficulty level. 
 
 ## FAQ
 
-**Q: How do I adjust the score limits?**  
+**Q: How do I adjust the affection points?**  
 A: You can adjust the score to win by setting the `PONG_SCORE_TO_WIN` variable in the `Pong` script. You can set this value to a maximum of 255. You can also update the score in the `Pong.cs` script by changing the variable initilzation as well.
 
-**Q: Can I add additional levels?**  
+**Q: Can I add additional dialogue?**  
 A: Yes, you can add other mini game levels. You can create another subclass of the `MiniGameLevel` and update/add all the necessary functions for your neew game. Then, you then can create a new subclass of `ScoreManager` to handle the scoring system for your new mini game.
 
-**Q: Can I update the speed of the paddles?**
+**Q: Can I update the affection point display?**
 A: Yes, you can update the speed of the paddles by going into the `Paddle.cs` script and changing the `speed` variable to whatever you would like. By default, it is set to 10.
 
 **Q: Can I update the base and maximum speed of the ball?**
@@ -56,5 +61,3 @@ A: Yes, you can update the maximum speed of the ball by clicking on the `Ball` s
 **Q: Can I update the sprites**
 A: Yes, you can update the sprites in the mini game. To do so, you can click on the element you want to update in the hierarchy, and drag and drop your new sprite into the `Sprite` tab in the `Sprite Renderer`.
 
-**Q: How do I set up Mobile?**
-A: The Pong game automatically detects if it is running on an Android or iOS device, and will enable the buttons for you. There is no setup or extra work required of you to do so.
