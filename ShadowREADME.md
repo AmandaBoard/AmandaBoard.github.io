@@ -15,7 +15,7 @@ This asset offers a custom interactable scene with a selected character, i.e Sha
 
 -   **Unity Version**: Unity 2022.3.42f1 or later
 -   **Platform Compatibility**: Works on Windows, macOS, Android, iOS
--   **Dependencies**: None
+-   **Dependencies**: 
 
 ## Installation
 
@@ -23,7 +23,9 @@ This asset offers a custom interactable scene with a selected character, i.e Sha
 2. **Import the package**:
     - Open Unity, go to `Assets > Import Package > Custom Package`.
     - Select the downloaded `.unitypackage` file and click **Import**.
-3. **Add the prefab**: Drag and drop the main prefab (`Shadow.prefab`) from the `Assets` folder into your scene.
+3. **Add the prefab**: Drag and drop the main prefab (`Shadow.prefab`) from the `Assets` folder into your scene as shown in the image below. 
+4. ![image](https://github.com/user-attachments/assets/7b32e6ef-6bcc-44f8-84b6-d1003b0b84b1)
+
 
 ## Usage
 
