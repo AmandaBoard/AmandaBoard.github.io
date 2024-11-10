@@ -42,6 +42,16 @@ ul li {
     margin: 5px 0;
 }
 
+/* Specific rule to keep the description text in normal weight */
+.info-section p {
+    font-weight: normal; /* Ensures the paragraph text is not bold */
+}
+
+/* Bold the specific parts we want, like 'Description' */
+strong {
+    font-weight: bold; /* This ensures only the <strong> elements are bolded */
+}
+
 /* Styling the video section */
 .video-section {
     margin-bottom: 30px;
@@ -54,7 +64,6 @@ video {
 }
 
 p {
-    font-weight: bold;
-    margin-top: 0;
-    font-size: 1.2em;
+    font-weight: normal; /* Ensures all paragraphs within the video section are not bold */
 }
+
