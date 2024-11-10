@@ -1,76 +1,60 @@
-* {
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .container {
-    display: flex;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    gap: 5%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.video-section {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.video-section video {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
+/* Styling the info section */
 .info-section {
-    flex: 1;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-.info-section h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .rating {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    margin-bottom: 8px;
+    margin: 10px 0;
 }
 
 .stars {
-    color: #ffd700;
-    margin-right: 5px;
-}
-
-.reviews {
-    color: #555;
-    font-size: 14px;
-}
-
-.info-section p {
-    margin-bottom: 10px;
+    color: gold;
 }
 
 .price {
-    font-size: 20px;
-    color: #28a745;
+    font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 20px;
+    color: green;
 }
 
-.info-section p,
-.info-section ul {
-    margin-bottom: 10px;
-}
-
-.info-section ul {
+ul {
+    margin: 10px 0;
     padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Styling the video section */
+.video-section {
+    margin-bottom: 30px;
+}
+
+video {
+    width: 100%;
+    max-width: 800px; /* Optional: adjust size as needed */
+    margin-top: 10px;
+}
+
+p {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 1.2em;
 }
