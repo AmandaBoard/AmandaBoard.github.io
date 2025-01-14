@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - [Your Name]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .paper {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .paper a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>[Your Name]'s Portfolio</h1>
+        <p>Welcome to my personal portfolio! Here, you'll find my latest research and projects.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container" id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm [Your Name], a researcher and developer passionate about the intersection of blockchain technology and large language models. I enjoy exploring innovative solutions to complex problems and sharing my findings with the community.</p>
+    </div>
+
+    <div class="container" id="research">
+        <h2>Latest Research</h2>
+        <div class="paper">
+            <h3>Blockchain for Large Language Models: A Holistic Survey</h3>
+            <p>Published in <strong>SIGKDD Explorations</strong>, December 2024.</p>
+            <p>This survey explores the intersection of blockchain technology and large language models, highlighting potential use cases, challenges, and future directions.</p>
+            <a href="[Add link to your paper or PDF here]" target="_blank">Read the full paper</a>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for collaboration or inquiries:</p>
+        <ul>
+            <li>Email: [Your Email]</li>
+            <li>LinkedIn: <a href="[Your LinkedIn Profile URL]" target="_blank">[Your Name]</a></li>
+            <li>GitHub: <a href="[Your GitHub Profile URL]" target="_blank">[Your GitHub Username]</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
